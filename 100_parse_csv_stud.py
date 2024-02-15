@@ -191,7 +191,7 @@ while True:
         print(f"Gewichtete durchschnittliche {search_term} für min: {min_value:.2f} = {weighted_mean:.2f}")
 
         #Ergebnisse werden an Funktion übergeben, um in eine Excel zu schreiben
-        data_out = [["Suchkriterium", "Durchschnitt", "Gewichteter Durchschnitt"], [search_term, mean, weighted_mean]]
+        data_out = [["Kategorie", "Durchschnitt", "Gewichteter Durchschnitt"], [search_term, mean, weighted_mean]]
         xfile_write(data_out)
 
         # Abfrage, ob ein Graph gezeichnet werden soll
@@ -245,7 +245,7 @@ while True:
         print("-----------------------------\n")
         
         # Ergebnisse werden an Funktion übergeben, um in eine Excel-Tabelle zu schreiben
-        data_out = [["Suchkriterium", "Suchkriterium", "Summe der Werte"], [search_term, value, sum]]
+        data_out = [["Kategorie", "Suchkriterium", "Summe der Werte"], [search_term, value, sum]]
         xfile_write(data_out)
 
 
